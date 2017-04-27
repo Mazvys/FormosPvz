@@ -1,0 +1,46 @@
+form{
+  background-color: gray;
+  padding-left: 30px;
+  padding-top:20px;
+  padding-bottom: 20px;
+  margin-right: -8px;
+}
+
+.tt{
+  width:500px;
+  margin:auto;
+
+}
+
+body{
+  background-color: orange;
+  padding:50px;
+}
+
+header{
+  text-align: center;
+  font-size:30px;
+}
+
+.new{
+  width:450px;
+}
+
+.qq{
+margin-left: -15px;
+}
+
+.hh {
+  width: 120px;
+}
+input.ng-invalid {border-left:5px solid red;
+}
+input.ng-valid {border-left:5px solid teal;}
+input.ng-untouched {border-left:0px solid green;}
+
+
+
+input.required {
+  background-color: blue;
+  padding:80px;
+}

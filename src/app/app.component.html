@@ -1,0 +1,77 @@
+<body><div class="tt">
+<header>Modulių forma</header>
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+<label>Vardas</label>
+<p><input type="text" class="new"  required formControlName = "vardas"></p>
+
+<!-- Patvirtinimas -->
+<div *ngIf="userForm.controls['vardas'].hasError('required') && userForm.controls['vardas'].touched" class="alert alert-danger">
+  Irasykite vardas
+</div>
+<div *ngIf="userForm.controls['vardas'].hasError('minlength')" class="alert alert-danger">
+  Irasykite bent 3 raides
+</div>
+<div *ngIf="userForm.controls['vardas'].hasError('maxlength')" class="alert alert-danger">
+  Irasykite ne daugiau nei 10 raidziu
+</div>
+<!-- -->
+
+<label>Pavarde</label>
+<p><input type="text" class="new" required formControlName = "pavarde"></p>
+
+<!-- Patvirtinimas -->
+<div *ngIf="userForm.controls['pavarde'].hasError('required') && userForm.controls['pavarde'].touched " class="alert alert-danger">
+Irasykite pavarde
+</div>
+<div *ngIf="userForm.controls['pavarde'].hasError('minlength')" class="alert alert-danger">
+Irasykite bent 2 raides
+</div>
+<div *ngIf="userForm.controls['pavarde'].hasError('maxlength')" class="alert alert-danger">
+Irasykite ne daugiau nei 15 raidziu
+</div>
+<!-- -->
+
+<label>Adresas</label>
+<p><input type="text" class="new" required formControlName = "adresas"></p>
+
+<label>Miestas</label>
+<p><input type="text" class="new" required formControlName = "miestas"></p>
+
+<label>Salis</label>
+<p><input type="text" class="new" required formControlName = "salis"></p>
+
+<!--PROBLEM
+<div class="qq" formGroupName="info">
+-->
+<div class="qq">
+<div class="col-md-4">
+<label>Telefonas</label>
+<p><input type="text" class="hh" required formControlName = "telefonas">
+</p>
+</div>
+<div *ngIf="userForm.controls['telefonas'].hasError('minlength') && userForm.controls['telefonas'].touched" class="alert alert-danger">
+Irasykite telefono numery su +370 arba 86 pradzia
+</div>
+
+
+<div class="col-md-4">
+<label>Emailas</label>
+<p><input type="text" class="hh" required formControlName = "emailas"></p>
+</div>
+<div class="col-md-4">
+<label>Skype</label>
+<p><input type="text" ng-only-number class="hh" formControlName = "skype"></p>
+
+</div>
+</div>
+<label>Kodas</label>
+<p><input type="text" required class="new" formControlName = "kodas"></p>
+<div *ngIf="userForm.controls['kodas'].hasError('pattern')" class="alert alert-danger">
+Irasykite 5 skaiciu kombinacija
+</div>
+
+<button type="submit" [disabled]="!userForm.valid" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</body>
