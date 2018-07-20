@@ -1,3 +1,24 @@
+## Project includes:
+
+Firebase
+Font-awesome
+bootstrap
+rxjs
+
+CRUD
+Input/Output
+Routing
+Pipes
+Forms
+Lazy loading
+Guards
+Testing
+
+
+
+
+
+
 # Regforma
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
