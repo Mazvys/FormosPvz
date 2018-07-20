@@ -1,6 +1,7 @@
 ## Project includes:
-
-Firebase
+<ul>
+  <li>Firebase</li>
+  </ul>
 Font-awesome
 bootstrap
 rxjs
