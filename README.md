@@ -2,8 +2,8 @@
 <ul>
   <li>Firebase</li>
 <li>Font-awesome</li>
-<li>bootstrap</li>
-<li>rxjs</li>
+<li>Bootstrap</li>
+<li>Rxjs</li>
 <li>CRUD</li>
 <li>Input/Output</li>
 <li>Routing</li>
