@@ -1,21 +1,18 @@
 ## Project includes:
 <ul>
   <li>Firebase</li>
-  </ul>
-Font-awesome
-bootstrap
-rxjs
-
-CRUD
-Input/Output
-Routing
-Pipes
-Forms
-Lazy loading
-Guards
-Testing
-
-
+<li>Font-awesome</li>
+<li>bootstrap</li>
+<li>rxjs</li>
+<li>CRUD</li>
+<li>Input/Output</li>
+<li>Routing</li>
+<li>Pipes</li>
+<li>Forms</li>
+<li>Lazy loading</li>
+<li>Guards</li>
+<li>Testing</li>
+</ul>  
 
 
 
